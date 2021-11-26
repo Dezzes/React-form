@@ -1,0 +1,125 @@
+.mailing-checkbox {
+  display: flex;
+  margin-top: 32px;
+}
+
+.mailing-checkbox span {
+  font-size: 21px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #7e7e7e;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% 80%;
+}
+
+.custom-checkbox:checked + label::before {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Blue_check.svg");
+}
+
+.submit-btn {
+  width: 120px;
+  height: 40px;
+  color: white;
+  left: calc(50% - 84.12px / 2 - 201px);
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #71c838;
+  border: #71c838;
+  box-shadow: 0px 1px 0px #539d22;
+  margin-left: 25%;
+  margin-top: 40px;
+  margin-right: 12px;
+}
+
+.submit-btn-wrapper {
+  align-items: center;
+}
+
+.submit-btn-wrapper span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.status {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  margin-left: 25%;
+  padding: 0px 10px;
+  background-color: #eaeaea;
+}
+
+.status p {
+  font-size: 14px;
+  color: #404040;
+}
+
+.status__triangle {
+  position: absolute;
+  top: -4px;
+  width: 11px;
+  height: 11px;
+  background-color: #eaeaea;
+  transform: rotate(45deg);
+}
+
+.status__change {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+
+.status__change a {
+  color: #0c77bb;
+  text-decoration: none;
+  border-bottom: 1px dashed #0c77bb;
+}
+
+@media screen and (max-width: 768px) {
+  .status {
+    margin: 0;
+    width: 100%;
+  }
+  .submit-btn {
+    margin: 0;
+    margin-top: 24px;
+  }
+  .mailing-checkbox {
+    display: block;
+    margin-top: 24px;
+  }
+  .custom-checkbox + label {
+    display: flex;
+    margin-top: 6px;
+  }
+  .submit-btn-wrapper span {
+    display: flex;
+    margin-top: 6px;
+  }
+  .status__change {
+    top: 50px;
+    right: 10px;
+  }
+}

@@ -1,0 +1,66 @@
+.myInput {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 32px;
+}
+
+.myInput label {
+  font-size: 21px;
+  flex-basis: 25%;
+}
+
+.myInput span {
+  flex-grow: 1;
+  flex-basis: 0%;
+  color: #999999;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.myInput input {
+  margin: 0px 18px 0px 0px;
+  border: 1px solid #999999;
+  width: 35%;
+  height: 31px;
+}
+
+hr {
+  margin-top: 32px;
+}
+
+.myInput p {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .myInput {
+    display: block;
+    position: relative;
+    margin-top: 24px;
+  }
+
+  .myInput span {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  .myInput input {
+    display: flex;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .myInput p {
+    font-size: 12px;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+  }
+  hr {
+    margin-top: 24px;
+  }
+}

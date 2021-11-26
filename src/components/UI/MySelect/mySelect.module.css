@@ -1,0 +1,38 @@
+.mySelect {
+  display: flex;
+  align-items: center;
+  margin: 32px 0px 0px;
+}
+
+.mySelect select {
+  padding: 6px;
+  border: 1px solid #999999;
+  width: 35%;
+  height: 31px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.mySelect label {
+  flex-basis: 25%;
+  font-size: 21px;
+  line-height: 19px;
+}
+
+@media screen and (max-width: 768px) {
+  .mySelect {
+    display: block;
+    align-items: center;
+  }
+
+  .mySelect select {
+    display: flex;
+    margin-top: 12px;
+    width: 180px;
+  }
+
+  .mySelect label {
+    font-size: 21px;
+    line-height: 19px;
+  }
+}
